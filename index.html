@@ -4,10 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Audrey Haegel — Portfolio</title>
-  <meta name="description" content="Portfolio of Audrey Haegel — engineering student in Materials & Sustainable Development (ICAM). Projects, field experience in Corsica, Balkans travel, and contact." />
+  <meta name="description" content="Portfolio of Audrey Haegel — engineering student in Materials & Sustainable Development (ICAM). Contact, CV, cover letter, philosophy, experience and volunteer work." />
   <link rel="stylesheet" href="styles.css" />
   <style>/* Fallback if styles.css fails to load */ body{background:#fff;color:#222;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;margin:0}</style>
 </head>
+
 <body>
   <!-- ===== Header / Nav ===== -->
   <header class="site-header">
@@ -17,17 +18,18 @@
         <a href="#top" class="brand-name">Audrey Haegel</a>
       </div>
       <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
-        <a href="#gallery">Photos</a>
+        <a href="#cv">CV</a>
+        <a href="#cover-letter">Cover Letter</a>
+        <a href="#philosophy">Philosophy</a>
+        <a href="#experience">Experience</a>
+        <a href="#volunteer">Volunteer</a>
       </nav>
     </div>
   </header>
 
   <main id="top">
-    <!-- ===== Hero / About (with portrait + mini gallery) ===== -->
+    <!-- ===== About / Hero ===== -->
     <section id="about" class="section">
       <div class="container">
         <div class="hero">
@@ -36,186 +38,279 @@
             <h1>Hi, I'm <span class="accent">Audrey Haegel</span>.</h1>
             <p class="lead">
               Engineering student in <strong>Materials &amp; Sustainable Development (ICAM)</strong>.
-              I enjoy building reliable, low-impact solutions—from materials selection and eco-design to hands-on prototyping and project coordination.
+              I enjoy building reliable, low-impact solutions—from materials selection and eco-design
+              to hands-on prototyping and on-site project coordination.
             </p>
             <ul class="chips">
+              <li class="chip">Materials & durability</li>
               <li class="chip">Eco-design & LCA</li>
-              <li class="chip">Materials testing</li>
-              <li class="chip">CAD & prototyping</li>
               <li class="chip">Field coordination</li>
+              <li class="chip">Quality & safety</li>
             </ul>
           </div>
         </div>
 
-        <!-- Mini hero gallery (top-of-page associated photos) -->
         <div class="mini-gallery">
           <figure class="mini-thumb">
-            <img src="assets/hero/cansat.jpg" alt="CanSat remote-controlled parachute" />
-            <figcaption>CanSat — RC parachute</figcaption>
+            <img src="assets/hero/corsica-site.jpg" alt="Corsica construction site internship" />
+            <figcaption>Corsica — on-site experience</figcaption>
           </figure>
           <figure class="mini-thumb">
-            <img src="assets/hero/corsica-site.jpg" alt="Corsica construction site internship" />
-            <figcaption>Corsica — site internship</figcaption>
+            <img src="assets/hero/cansat.jpg" alt="CanSat remote-controlled parachute" />
+            <figcaption>CanSat — embedded project</figcaption>
           </figure>
           <figure class="mini-thumb">
             <img src="assets/hero/balkans.jpg" alt="Balkans mountain road" />
-            <figcaption>Balkans — on the road</figcaption>
+            <figcaption>Outdoor mindset — adaptability</figcaption>
           </figure>
         </div>
       </div>
     </section>
 
-    <!-- ===== Projects ===== -->
-    <section id="projects" class="section">
+    <!-- ===== 1) Contact ===== -->
+    <section id="contact" class="section">
       <div class="container">
-        <h2>Projects</h2>
+        <h2>Contact</h2>
+        <div class="cards flex">
+          <article class="card">
+            <h3>Let’s connect</h3>
+            <p class="muted">
+              Feel free to reach out for internships, collaborations, or just to say hi.
+            </p>
+            <ul class="contact-list">
+              <li>Phone: <a href="tel:+33652541074">+33 6 52 54 10 74</a></li>
+              <li>Email: <a href="mailto:audrey.haegel@2026.icam.fr">audrey.haegel@2026.icam.fr</a></li>
+              <li>
+                LinkedIn:
+                <a href="https://www.linkedin.com/in/audrey-haegel-436811338/" target="_blank" rel="noopener">
+                  linkedin.com/in/audrey-haegel-436811338/
+                </a>
+              </li>
+            </ul>
+          </article>
 
-        <!-- CanSat project replaces greenhouse -->
-        <article class="project card flex-col">
-          <div class="project-header flex between">
-            <h3>CanSat — Remote-Controlled Parachute</h3>
-            <div class="tech flex wrap">
-              <span class="chip">Embedded</span>
-              <span class="chip">Telemetry</span>
-              <span class="chip">C/C++</span>
-              <span class="chip">Materials</span>
-              <span class="chip">Aero & data</span>
-            </div>
-          </div>
-
-          <p>
-            I developed a <strong>CanSat payload with a remote-controlled parachute</strong> focusing on stable descent,
-            reliable telemetry, and rugged design. The project combined lightweight materials selection, canopy geometry,
-            and control logic to steer and manage descent rate while transmitting live data.
-          </p>
-
-          <div class="flex wrap gap">
-            <div class="subcard">
-              <h4>Embedded & Telemetry</h4>
-              <ul class="tight">
-                <li>Firmware in C/C++ (sensor fusion, state machine for deployment & steering).</li>
-                <li>Live downlink (altitude, velocity, temperature) with packet integrity checks.</li>
-                <li>Ground control for manual inputs and basic autonomous safety routines.</li>
-              </ul>
-            </div>
-            <div class="subcard">
-              <h4>Materials & Structure</h4>
-              <ul class="tight">
-                <li>Canopy fabric selection (tear resistance, mass, stitch patterns) and line routing.</li>
-                <li>Payload frame designed for impact tolerance & easy access to electronics.</li>
-                <li>Environmental sealing and strain relief on connectors.</li>
-              </ul>
-            </div>
-            <div class="subcard">
-              <h4>Outcomes</h4>
-              <ul class="tight">
-                <li>Stable, steerable descent with predictable glide ratio.</li>
-                <li>Consistent telemetry logs for flight analysis and refinement.</li>
-                <li>Lessons transferable to eco-design and reliable prototyping.</li>
-              </ul>
-            </div>
-          </div>
-
-          <p class="muted">
-            Result: a robust, testable platform that taught me the same rigor as larger IoT or mechatronics projects—only in a compact, high-stakes format.
-          </p>
-        </article>
+          <article class="card">
+            <h3>Quick profile</h3>
+            <ul class="tight">
+              <li><strong>Based in:</strong> Strasbourg, France</li>
+              <li><strong>Focus:</strong> Materials engineering, sustainability, field execution</li>
+              <li><strong>Looking for:</strong> Internship / entry-level opportunity (materials / industrial / sustainability)</li>
+            </ul>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- ===== Experience (Corsica internship) ===== -->
+    <!-- ===== 2) CV ===== -->
+    <section id="cv" class="section">
+      <div class="container">
+        <h2>CV</h2>
+
+        <div class="cards flex">
+          <article class="card">
+            <h3>Download</h3>
+            <p class="muted">
+              PDF version of my resume.
+            </p>
+            <p>
+              <a class="chip" href="assets/Audrey_Haegel_CV.pdf" target="_blank" rel="noopener">Open CV (PDF)</a>
+              &nbsp;•&nbsp;
+              <a class="chip" href="assets/Audrey_Haegel_CV.pdf" download>Download</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Highlights</h3>
+            <ul class="tight">
+              <li>Materials & Sustainable Development (ICAM) — engineering track</li>
+              <li>On-site coordination, planning follow-up, safety & quality routines</li>
+              <li>Production environment experience (process discipline, standards)</li>
+              <li>Hands-on mindset: practical problem-solving and continuous improvement</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 3) Cover Letter ===== -->
+    <section id="cover-letter" class="section">
+      <div class="container">
+        <h2>Cover Letter</h2>
+
+        <div class="cards flex">
+          <article class="card">
+            <h3>Download</h3>
+            <p class="muted">
+              A general cover letter (PDF). I can tailor it to specific roles.
+            </p>
+            <p>
+              <a class="chip" href="assets/Audrey_Haegel_Cover_Letter.pdf" target="_blank" rel="noopener">Open Cover Letter (PDF)</a>
+              &nbsp;•&nbsp;
+              <a class="chip" href="assets/Audrey_Haegel_Cover_Letter.pdf" download>Download</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>What I bring</h3>
+            <ul class="tight">
+              <li><strong>Execution:</strong> structured follow-up, clear communication, reliability</li>
+              <li><strong>Sustainability:</strong> pragmatic approach (impact + feasibility)</li>
+              <li><strong>Field mindset:</strong> safety, quality, and real-world constraints</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 4) Philosophy / Vision Statement ===== -->
+    <section id="philosophy" class="section">
+      <div class="container">
+        <h2>Philosophy / Vision Statement</h2>
+
+        <div class="cards flex">
+          <article class="card">
+            <h3>My approach</h3>
+            <p>
+              I believe sustainable engineering must be <strong>measurable</strong>, <strong>useful</strong>, and
+              <strong>implementable</strong>. Real impact comes from solutions that work on the ground:
+              the right materials, the right processes, and the right habits to deliver quality over time.
+            </p>
+            <p class="muted">
+              My goal is to help teams build products and projects that last—while reducing waste, rework,
+              and unnecessary environmental impact.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Principles I follow</h3>
+            <ul class="tight">
+              <li><strong>Reality first:</strong> field constraints drive good design.</li>
+              <li><strong>Durability matters:</strong> long life reduces footprint.</li>
+              <li><strong>Simple & robust:</strong> reliability beats complexity.</li>
+              <li><strong>Continuous improvement:</strong> test, learn, iterate.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 5) Experiences ===== -->
     <section id="experience" class="section">
       <div class="container">
-        <h2>Field Experience</h2>
+        <h2>Experience</h2>
 
+        <!-- Société Corse Travaux -->
         <article class="project card flex-col">
           <div class="project-header flex between">
-            <h3>Assistant Site Manager — Corsica (4 months)</h3>
+            <h3>Assistant Site Manager (Conducteur de travaux) — Société Corse Travaux</h3>
             <div class="tech flex wrap">
               <span class="chip">Coordination</span>
               <span class="chip">Safety</span>
               <span class="chip">Quality</span>
-              <span class="chip">Materials</span>
               <span class="chip">Planning</span>
+              <span class="chip">Materials</span>
             </div>
           </div>
+
           <p>
-            As an <strong>Assistant Site Manager</strong>, I supported day-to-day coordination between crews and subcontractors,
-            tracked progress vs. schedule, and helped maintain safety and quality on site. I also assisted with
-            materials logistics (orders, deliveries, on-site storage) and documented key milestones for reporting.
+            I supported day-to-day on-site execution by coordinating crews and subcontractors,
+            tracking progress versus schedule, and helping maintain safety and quality standards.
+            I also assisted with materials logistics (orders, deliveries, storage) and reporting.
           </p>
+
           <div class="flex wrap gap">
             <div class="subcard">
-              <h4>What I did</h4>
+              <h4>Key responsibilities</h4>
               <ul class="tight">
-                <li>Daily briefings, task follow-up, and interface with subcontractors.</li>
-                <li>Safety routines and toolbox talks; incident-free track record.</li>
-                <li>Materials checks, supplier coordination, and conformity notes.</li>
+                <li>Daily briefings and task follow-up with teams on site.</li>
+                <li>Support for safety routines and basic quality checks.</li>
+                <li>Materials flow: deliveries, conformity notes, and availability on site.</li>
               </ul>
             </div>
             <div class="subcard">
               <h4>What I learned</h4>
               <ul class="tight">
-                <li>Site rhythm, problem-solving under constraints, and clear communication.</li>
-                <li>How materials choices impact durability, rework, and total cost.</li>
-                <li>The value of lean routines for predictable outcomes.</li>
+                <li>How to communicate clearly under time pressure.</li>
+                <li>How planning and logistics impact productivity and rework.</li>
+                <li>Why safety routines are essential for reliable execution.</li>
               </ul>
             </div>
           </div>
-          <p class="muted">This internship grounded my sustainability mindset in real-world constraints—budget, deadlines, and safety.</p>
+
+          <p class="muted">
+            This experience strengthened my field discipline and showed me how concrete, simple systems create real impact.
+          </p>
+        </article>
+
+        <!-- Hager -->
+        <article class="project card flex-col" style="margin-top:18px;">
+          <div class="project-header flex between">
+            <h3>Production Operator — Hager Group</h3>
+            <div class="tech flex wrap">
+              <span class="chip">Production</span>
+              <span class="chip">Standards</span>
+              <span class="chip">Quality</span>
+              <span class="chip">Teamwork</span>
+            </div>
+          </div>
+
+          <p>
+            In a production environment, I applied strict work standards, respected quality requirements,
+            and contributed to stable output. This role trained my attention to detail and consistency.
+          </p>
+
+          <div class="flex wrap gap">
+            <div class="subcard">
+              <h4>Focus areas</h4>
+              <ul class="tight">
+                <li>Following standard procedures and work instructions.</li>
+                <li>Quality checks and basic non-conformity handling.</li>
+                <li>Maintaining an organized, safe workstation.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h4>Skills developed</h4>
+              <ul class="tight">
+                <li>Discipline, precision, and pace management.</li>
+                <li>Respect for quality gates and traceability.</li>
+                <li>Team coordination and reliability.</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="muted">
+            This experience complements my site work by bringing a strong industrial/quality mindset.
+          </p>
         </article>
       </div>
     </section>
 
-    <!-- ===== Balkans Travel (personal exploration, not academic) ===== -->
-    <section id="balkans" class="section">
+    <!-- ===== 6) Volunteer Work ===== -->
+    <section id="volunteer" class="section">
       <div class="container">
-        <h2>Balkans Travel</h2>
+        <h2>Volunteer Work</h2>
+
         <div class="cards flex">
           <article class="card">
-            <h3>Why it matters</h3>
+            <h3>ERA Association — Cat Rescue (Strasbourg)</h3>
             <p>
-              My trip across the Balkans challenged my sense of planning and resilience. From mountain passes to coastal towns,
-              I learned to adapt quickly, communicate across languages, and stay resourceful—skills I bring to teamwork and field work.
+              I volunteer with <strong>ERA</strong>, an association that rescues and helps rehome stray cats in Strasbourg.
+              The work involves coordination, reliability, and practical problem-solving—often under time constraints.
             </p>
-          </article>
-          <article class="card">
-            <h3>What I took away</h3>
             <ul class="tight">
-              <li><strong>Adaptability:</strong> plans change—iterate and keep momentum.</li>
-              <li><strong>Observation:</strong> materials and structures in varied climates inspire practical design choices.</li>
-              <li><strong>Respect:</strong> culture-driven constraints shape realistic, long-lasting solutions.</li>
+              <li>Supporting rescue and care actions (as needed).</li>
+              <li>Helping with logistics and coordination tasks.</li>
+              <li>Contributing to long-term animal welfare locally.</li>
             </ul>
           </article>
-        </div>
-      </div>
-    </section>
 
-    <!-- ===== Contact ===== -->
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>Feel free to reach out for collaborations, internships, or just to say hi.</p>
-        <ul class="contact-list">
-          <li>Phone: <a href="tel:+33652541074">+33 6 52 54 10 74</a></li>
-          <li>Email: <a href="mailto:audrey.haegel@2026.icam.fr">audrey.haegel@2026.icam.fr</a></li>
-          <li>LinkedIn: <a href="https://www.linkedin.com/in/audrey-haegel-436811338/" target="_blank" rel="noopener">linkedin.com/in/audrey-haegel-436811338/</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- ===== Photos / Gallery ===== -->
-    <section id="gallery" class="section">
-      <div class="container">
-        <h2>Photos</h2>
-        <p class="muted">Add your images to <code>/assets/gallery/</code> and update file names below.</p>
-        <div class="gallery flex wrap">
-          <figure class="thumb"><img src="assets/gallery/cansat-flight.jpg" alt="CanSat test flight" /></figure>
-          <figure class="thumb"><img src="assets/gallery/corsica-site-2.jpg" alt="Corsica construction site 2" /></figure>
-          <figure class="thumb"><img src="assets/gallery/balkans-1.jpg" alt="Balkans landscape 1" /></figure>
-          <figure class="thumb"><img src="assets/gallery/balkans-2.jpg" alt="Balkans town 2" /></figure>
-          <figure class="thumb"><img src="assets/gallery/materials-lab.jpg" alt="Materials lab work" /></figure>
-          <figure class="thumb"><img src="assets/gallery/proto.jpg" alt="Prototype close-up" /></figure>
+          <article class="card">
+            <h3>Why it matters to me</h3>
+            <p class="muted">
+              I value community-driven initiatives where action and responsibility make a real difference.
+              It’s also a great way to practice teamwork, organization, and consistency outside of school and work.
+            </p>
+          </article>
         </div>
       </div>
     </section>
@@ -228,8 +323,8 @@
   </footer>
 
   <script>
-    // Update year automatically
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
+
